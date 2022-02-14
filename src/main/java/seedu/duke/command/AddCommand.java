@@ -31,7 +31,7 @@ public class AddCommand extends Command {
             storage.addLine(lineToAdd);
             return newTaskList;
         } catch (NullPointerException e) {
-            throw new DukeException("Problem is in executing add command");
+            throw new DukeException("Can't add the task because the command is wrong. Can you try again?");
         }
     }
 
